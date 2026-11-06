@@ -1,5 +1,5 @@
 {
-  "name": "dtp-protocol",
+  "name": "dtp",
   "version": "1.0.0",
   "description": "A simple custom TCP application protocol",
   "scripts": {
