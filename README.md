@@ -1,4 +1,6 @@
 # DTP — Daniel Transfer Protocol
+![CI](https://github.com/dnipy/dtp/actions/workflows/ci.yml/badge.svg)
+![Docker](https://img.shields.io/badge/GHCR-Docker-blue?logo=docker)
 
 A custom application-layer protocol built on top of TCP using TypeScript and Node.js.
 
