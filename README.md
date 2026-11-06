@@ -65,7 +65,7 @@ For Docker usage:
 Clone the repository:
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
+git clone git@github.com:dnipy/dtp.git
 cd dtp
 npm install
 ```
