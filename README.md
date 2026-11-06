@@ -108,30 +108,40 @@ Or on Linux/macOS:
 DTP_PORT=5050 npm run server
 ```
 
-## Running with Docker
+## Docker
 
-Docker provides a simple way to preview and run the DTP server without manually starting the Node.js application.
+DTP server images are published to GitHub Container Registry (GHCR).
 
-Build the image:
+### Pull the image
 
 ```bash
-docker build -t dtp-server .
+docker pull ghcr.io/dnipy/dtp:latest
 ```
 
-Run the container:
+### Run the server
 
 ```bash
 docker run --rm \
   --name dtp-server \
   -p 4040:4040 \
-  dtp-server
+  ghcr.io/dnipy/dtp:latest
 ```
 
-The server will be accessible from your host machine at:
+The DTP server will be available at:
 
 ```text
 127.0.0.1:4040
 ```
+
+You can now connect using the DTP CLI or TypeScript client.
+
+### Use a specific version
+
+```bash
+docker pull ghcr.io/dnipy/dtp:1.0.0
+```
+
+Available image tags are generated automatically through GitHub Actions.
 
 ### Custom Port
 
